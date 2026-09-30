@@ -14,6 +14,7 @@ import sharp from "sharp";
 const CWD = process.cwd();
 const BASE = join(CWD, "public", "images", "og-base.png");
 const OUT = join(CWD, "public", "images", "og-image.png");
+const OUT_PREVIEW = join(CWD, "public", "images", "tooth-fairy-preview.png");
 
 export interface OgProfileText {
   nameAr: string;
@@ -65,4 +66,7 @@ export async function regenerateOgImage(p: OgProfileText): Promise<void> {
     .composite([{ input: Buffer.from(svg) }])
     .png({ compressionLevel: 9 })
     .toFile(OUT);
+
+  const { copyFileSync } = await import("node:fs");
+  copyFileSync(OUT, OUT_PREVIEW);
 }

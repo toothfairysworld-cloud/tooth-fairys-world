@@ -34,7 +34,7 @@ export async function generateMetadata({
       description: pick(entry.summary, locale as Locale),
       images: [
         {
-          url: "/images/og-image.png?v=3",
+          url: "/images/tooth-fairy-preview.png",
           alt: pick(entry.title, locale as Locale),
         },
       ],
