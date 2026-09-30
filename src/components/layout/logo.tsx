@@ -19,14 +19,14 @@ export function Logo({ name, className, tone = "default" }: LogoProps) {
       href="/"
       aria-label={name}
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-full focus-visible:outline-2",
+        "group inline-flex items-center gap-1.5 sm:gap-2.5 rounded-full focus-visible:outline-2",
         invert ? "focus-visible:outline-white" : "focus-visible:outline-ring",
         className,
       )}
     >
       <svg
         viewBox="0 0 40 40"
-        className="size-9 shrink-0"
+        className="size-7 sm:size-8 md:size-9 shrink-0"
         aria-hidden="true"
         focusable="false"
       >
@@ -53,7 +53,7 @@ export function Logo({ name, className, tone = "default" }: LogoProps) {
       </svg>
       <span
         className={cn(
-          "text-h3 font-bold tracking-normal transition-opacity",
+          "text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-tight transition-opacity whitespace-nowrap",
           invert ? "text-white group-hover:opacity-85" : "text-foreground group-hover:opacity-80",
         )}
       >

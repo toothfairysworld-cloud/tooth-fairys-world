@@ -45,13 +45,13 @@ export function MobileNav({
           size="icon"
           aria-label={t("openMenu")}
           className={cn(
-            "size-9 rounded-full lg:hidden",
+            "size-8 sm:size-9 rounded-full shrink-0 lg:hidden",
             tone === "invert"
               ? "text-white/85 hover:bg-white/12 hover:text-white"
               : "text-muted-foreground",
           )}
         >
-          <Menu className="size-5" aria-hidden="true" />
+          <Menu className="size-4.5 sm:size-5" aria-hidden="true" />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="mx-auto max-w-lg rounded-t-3xl max-h-[85vh]">

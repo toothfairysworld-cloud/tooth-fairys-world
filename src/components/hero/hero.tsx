@@ -7,31 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ArrowDown, Download, Mail, Sparkle } from "lucide-react";
 
 import { SampleBadge } from "@/components/common/sample-badge";
-import { ToothIcon } from "@/components/common/tooth-icon";
 import { pick } from "@/content/types";
-import type { Locale } from "@/content/types";
-import type { ProfileData } from "@/lib/data";
-import { DURATION, EASE } from "@/lib/motion";
-import { GraduationCounter } from "./graduation-counter";
-
-const RIBBON = {
-  ar: [
-    "طالبة طب أسنان — السنة الخامسة",
-    "دفعة 2027",
-    "‏+120 حشوة",
-    "‏+45 علاج عصب",
-    "‏+60 معالجة لثة",
-    "محفظة أكاديمية — ليست عيادة",
-  ],
-  en: [
-    "Fifth-year dental student",
-    "Class of 2027",
-    "120+ restorations",
-    "45+ endodontic cases",
-    "60+ periodontal cases",
-    "Academic portfolio — not a clinic",
-  ],
-} as const;
 
 /**
  * Hero — cinematic full-bleed portrait.
@@ -162,7 +138,7 @@ export function Hero({ profile }: { profile: ProfileData }) {
       <motion.a
         href="#about"
         aria-label={t("scrollCue")}
-        className="absolute bottom-16 start-1/2 z-10 hidden -translate-x-1/2 rounded-full p-2 text-white/70 transition-colors hover:text-white focus-visible:text-white md:block"
+        className="absolute bottom-8 start-1/2 z-10 hidden -translate-x-1/2 rounded-full p-2 text-white/70 transition-colors hover:text-white focus-visible:text-white md:block"
         initial={reduce ? undefined : { opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: DURATION.slow }}
@@ -176,35 +152,6 @@ export function Hero({ profile }: { profile: ProfileData }) {
           <ArrowDown className="size-5" />
         </motion.span>
       </motion.a>
-
-      {/* Clean fixed milestone bar with tooth emblem — static and non-animated */}
-      <div
-        className="absolute inset-x-0 bottom-0 z-20 border-t border-white/15 bg-[#120a0e]/85 py-3.5 backdrop-blur-xl shadow-lg"
-      >
-        <div className="container-site flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 text-xs sm:text-sm font-medium text-white/85">
-          {/* Clean Tooth Logo / شعار Emblem */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#e7c08a]/35 bg-[#e7c08a]/15 px-3 py-1 text-xs font-bold text-[#e7c08a] shadow-sm">
-            <ToothIcon className="size-4 text-[#e7c08a]" />
-            <span>{locale === "ar" ? "عالم جنية الأسنان" : "Tooth Fairy's World"}</span>
-          </div>
-
-          <span aria-hidden="true" className="hidden sm:inline text-[#e7c08a]/50">✦</span>
-
-          {/* Milestone items */}
-          {RIBBON[locale].map((phrase, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <span className="whitespace-nowrap font-medium text-white/80">
-                {phrase}
-              </span>
-              {i < RIBBON[locale].length - 1 && (
-                <span aria-hidden="true" className="text-[#e7c08a]/40 text-xs">
-                  ✦
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

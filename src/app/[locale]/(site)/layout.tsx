@@ -30,7 +30,6 @@ export default async function SiteLayout({
     <div className="flex min-h-screen flex-col">
       <SkipLink label={t("skip")} />
       <Header name={name} />
-      <SampleBanner />
       <main id="main-content" className="flex-1">
         {children}
       </main>

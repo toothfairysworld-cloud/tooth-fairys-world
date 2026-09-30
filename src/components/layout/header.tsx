@@ -36,9 +36,9 @@ export function Header({ name }: { name: string }) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-md transition-colors">
-      <div className="container-site flex h-16 items-center justify-between gap-4">
+      <div className="container-site flex h-14 sm:h-16 items-center justify-between gap-2 sm:gap-4 px-3 sm:px-6">
         {/* Brand / Logo */}
-        <div className="flex shrink-0 items-center">
+        <div className="flex min-w-0 items-center">
           <Logo name={name} tone="default" />
         </div>
 
@@ -102,7 +102,7 @@ export function Header({ name }: { name: string }) {
         </nav>
 
         {/* Right utilities & mobile toggle */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <LangSwitcher tone="default" />
           <ThemeToggle tone="default" />
 

@@ -39,7 +39,7 @@ export function ThemeToggle({
       aria-label={t("toggleTheme")}
       aria-pressed={isDark}
       className={cn(
-        "size-9 rounded-full",
+        "size-8 sm:size-9 rounded-full shrink-0",
         invert
           ? "text-white/80 hover:bg-white/12 hover:text-white"
           : "text-muted-foreground",
