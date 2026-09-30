@@ -70,11 +70,27 @@ async function main() {
       cvPdf: profile.cvPdf,
       graduationDate: profile.graduationDate,
       isSample: true,
+      aboutImage1: "/images/about-1.webp",
+      aboutImage2: "/images/about-2.webp",
+      aboutImage3: "/images/about-3.webp",
     },
   });
   console.log("  profile ✓");
 
   // ---- sections ---------------------------------------------------------
+  const sectionDefaults: Record<string, string> = {
+    about: "/images/about-2.webp",
+    experience: "/images/hub-experience.webp",
+    cases: "/images/case-6-after.webp",
+    certificates: "/images/hub-certificates.webp",
+    research: "/images/vol-3.webp",
+    volunteering: "/images/vol-1.webp",
+    blog: "/images/blog-1.webp",
+    ask: "/images/about-1.webp",
+    resources: "/images/about-3.webp",
+    testimonials: "/images/vol-2.webp",
+    contact: "/images/hero-portrait.webp",
+  };
   await db.sectionConfig.deleteMany();
   await db.sectionConfig.createMany({
     data: sectionOrder.map((section, index) => {
@@ -87,6 +103,7 @@ async function main() {
         titleEn: heading?.title.en ?? "",
         subtitleAr: heading?.subtitle.ar ?? "",
         subtitleEn: heading?.subtitle.en ?? "",
+        image: sectionDefaults[section.id] ?? "",
       };
     }),
   });
