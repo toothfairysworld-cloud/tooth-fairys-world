@@ -53,12 +53,12 @@ export async function regenerateOgImage(p: OgProfileText): Promise<void> {
   const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <text x="80" y="268" font-family="Readex Pro" font-weight="700" font-size="${nameSize}"
         fill="#F2E8EA">${esc(nameAr)}</text>
-  <text x="80" y="345" font-family="Plus Jakarta Sans" font-weight="600" font-size="42"
+  <text x="80" y="345" font-family="Plus Jakarta Sans" font-weight="600" font-size="38"
         fill="#E39DAB">${esc(nameEn)}</text>
-  <text x="80" y="412" font-family="Readex Pro" font-weight="400" font-size="33"
+  <text x="80" y="412" font-family="Readex Pro" font-weight="400" font-size="32"
         fill="#B5A0A8">${esc(taglineAr)}</text>
   <text x="80" y="528" font-family="Plus Jakarta Sans" font-weight="400" font-size="26"
-        fill="#8A7580">toothfairysworld.com</text>
+        fill="#8A7580">tooth-fairys-world.vercel.app</text>
 </svg>`;
 
   await sharp(BASE)
