@@ -6,8 +6,11 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowDown, Download, Mail, Sparkle } from "lucide-react";
 
-import { SampleBadge } from "@/components/common/sample-badge";
 import { pick } from "@/content/types";
+import type { Locale } from "@/content/types";
+import type { ProfileData } from "@/lib/data";
+import { DURATION, EASE } from "@/lib/motion";
+import { GraduationCounter } from "./graduation-counter";
 
 /**
  * Hero — cinematic full-bleed portrait.
@@ -102,7 +105,6 @@ export function Hero({ profile }: { profile: ProfileData }) {
             <p className="text-caption font-semibold uppercase tracking-[0.22em] text-[#e7c08a]">
               {t("eyebrow")}
             </p>
-            <SampleBadge tone="invert" />
           </motion.div>
 
           <motion.h1
