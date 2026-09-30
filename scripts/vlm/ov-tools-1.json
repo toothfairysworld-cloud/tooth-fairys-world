@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image shows several dental handpieces and tools hanging from a white dental unit, with a tray of instruments and a cup in the background.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790711288,
+  "id": "2026093003480582fd8a0eebaf4710",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093003480582fd8a0eebaf4710",
+  "usage": {
+    "completion_tokens": 29,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4051,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4080
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1. **Position:** Center (vertically middle, horizontally centered).\n2. **Clean Space:** Yes, ample clean space above the head and to the sides for large white text.\n3. **Orientation/Resolution:** Landscape; approx 2000x1333px (high res).\n4. **Expression:** Yes, smiling warmly with clear eye contact and no mask.\n5. **Rating:** **8/10** (Excellent natural lighting, professional yet approachable look, great for a feminine dental brand).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717476,
+  "id": "20260930053110e2d106676b1e415a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930053110e2d106676b1e415a",
+  "usage": {
+    "completion_tokens": 104,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2909,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3013
+  }
+}

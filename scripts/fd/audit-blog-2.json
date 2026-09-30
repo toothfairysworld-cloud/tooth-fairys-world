@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, there are two people: a male dentist (main subject) and a female patient (secondary subject).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716939,
+  "id": "2026093005221811a80c30a3814ee7",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005221811a80c30a3814ee7",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1452,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1475
+  }
+}

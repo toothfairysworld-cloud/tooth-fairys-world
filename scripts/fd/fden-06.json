@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features two individuals, likely male, appearing to be in their 40s or 50s, dressed in full surgical attire including blue scrubs, caps, and face masks. They are engaged in a focused medical procedure, with the person on the left manipulating a thin instrument while the individual on the right holds a bright surgical light to illuminate the work area. The setting is clearly an operating room or clinical laboratory, evidenced by the background medical equipment, monitors, and overhead lighting. The photograph is oriented in landscape format and possesses the grainy, slightly faded color palette characteristic of film photography from the 1970s or 1980s. The overall mood is one of intense concentration, professionalism, and sterile seriousness.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716974,
+  "id": "202609300522512e3150c32c254614",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300522512e3150c32c254614",
+  "usage": {
+    "completion_tokens": 148,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3008
+  }
+}

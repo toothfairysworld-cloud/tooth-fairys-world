@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A person's hand holding a pen writes on paper at a wooden desk with a coffee cup and notebook nearby.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710073,
+  "id": "202609300327528cb561f7a1484e6f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300327528cb561f7a1484e6f",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 138
+  }
+}

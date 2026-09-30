@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a male dentist, appearing to be in his 40s or 50s with short dark hair and glasses, dressed in a white professional shirt. He is seated and leaning forward, holding a black pen as he points toward a dental X-ray displayed on an overhead monitor. To his left, a female patient with brown hair tied in a ponytail, wearing a light blue top and grey jeans, is reclined in the dental chair, looking up at the screen. The setting is a modern, brightly lit dental clinic characterized by clean white equipment, a grey textured wall, and various dental tools arranged on a tray. The image is presented in a landscape orientation with a high-resolution feel that captures sharp details and a sterile, professional atmosphere. The overall mood is calm, informative, and reassuring, emphasizing a collaborative consultation between the practitioner and the patient.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717025,
+  "id": "202609300523406fe5d535e7b9475c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300523406fe5d535e7b9475c",
+  "usage": {
+    "completion_tokens": 174,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3116,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3290
+  }
+}

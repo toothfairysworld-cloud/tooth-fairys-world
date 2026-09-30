@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image depicts no person, but rather two anatomical models—a detailed, cross-sectioned human brain model with visible internal structures and a white neuron model with branching dendrites—resting on a smooth gray surface in what appears to be an educational or laboratory setting. The brain model is oriented to display its medial surface with distinct color-coded regions (brown cortex, tan internal structures, and purple areas), while the neuron model lies adjacent with its characteristic star-like shape. The scene conveys a clinical, academic mood focused on neuroscience education or study, with the models positioned as if ready for instructional demonstration or examination.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717082,
+  "id": "2026093005243812e9045dcdc042c1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005243812e9045dcdc042c1",
+  "usage": {
+    "completion_tokens": 123,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2330,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2453
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A group of medical professionals in surgical scrubs, masks, and caps stand in a circle looking down at the camera from below a surgical light.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710072,
+  "id": "20260930032751923a577f5fac47e3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930032751923a577f5fac47e3",
+  "usage": {
+    "completion_tokens": 30,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 163,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 193
+  }
+}

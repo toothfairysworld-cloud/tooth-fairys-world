@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the image provided, here is the evaluation for a cinematic website hero:\n\n1.  **Position:** **Center** (horizontally) and **Middle/Bottom** (vertically). The subject is a centered head-and-shoulders portrait.\n2.  **Clean Space:** **Yes**. There is significant clean, white negative space above the head and on both sides, which is perfect for overlaying large white text with high readability.\n3.  **Orientation & Resolution:** **Portrait** orientation (approx. 3:4 or 4:5 aspect ratio). The resolution appears to be high definition (likely approx. 2000px+ height), suitable for web use.\n4.  **Expression & Visibility:** **Yes**, she is **smiling broadly** (showing teeth, ideal for dental), her **eyes are clearly visible and engaging**, and there is **no mask**.\n5.  **Rating:** **8/10**.\n    *   *Pros:* Excellent lighting, genuine smile showing dental work, clean background for text, professional yet approachable \"feminine\" aesthetic.\n    *   *Cons:* It is a tight crop (headshot) rather than a full-body or environmental shot, which is slightly less \"cinematic\" than a wide-angle lifestyle shot, but still very effective for a dental hero.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717487,
+  "id": "202609300531198db680cb5a6948fa",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300531198db680cb5a6948fa",
+  "usage": {
+    "completion_tokens": 277,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5213,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5490
+  }
+}

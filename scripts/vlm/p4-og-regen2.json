@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, the Arabic tagline stays clear of the tooth graphic, and everything renders cleanly.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790723765,
+  "id": "20260930071604e498a1b4c6f84db6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930071604e498a1b4c6f84db6",
+  "usage": {
+    "completion_tokens": 19,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1101,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1120
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A man in a white shirt and glasses is examining a set of medical images on a light box.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710070,
+  "id": "20260930032749eb2dda0b64f44b8a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930032749eb2dda0b64f44b8a",
+  "usage": {
+    "completion_tokens": 21,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 136
+  }
+}

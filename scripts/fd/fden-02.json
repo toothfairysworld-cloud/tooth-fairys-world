@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A man, appearing to be in his 30s or 40s with dark hair and a beard, is shown in profile wearing a white long-sleeved shirt and a black wristband. He is actively examining dental X-rays and 3D reconstructions taped to a brightly lit lightbox, using his right hand to point at specific details while his left hand holds the film steady. The setting is a clinical environment, likely a dentist's office or radiology room. The image is oriented in landscape format with a high-resolution feel, characterized by sharp focus on the hands and X-rays against a softly blurred background. The overall mood is professional, analytical, and focused, conveying a sense of diagnostic precision and medical expertise.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716960,
+  "id": "202609300522351c12d7e6708a48a6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300522351c12d7e6708a48a6",
+  "usage": {
+    "completion_tokens": 147,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3007
+  }
+}

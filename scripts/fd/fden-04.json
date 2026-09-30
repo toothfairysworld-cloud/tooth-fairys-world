@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a female medical professional, appearing to be in her 30s or 40s, dressed in full surgical attire including a blue scrub suit, a teal disposable bouffant cap, and a light blue surgical mask. She is captured in a moment of intense concentration, leaning forward with her gaze directed downward toward a procedure, her gloved hands actively engaged in a task involving surgical instruments. The setting is clearly an operating room, evidenced by the large, bright circular surgical lamp overhead and the presence of other team members in similar scrubs partially visible in the foreground and background. The photograph is oriented in landscape format and possesses a high-resolution feel with sharp focus on the subject's face and a shallow depth of field that blurs the immediate surroundings. The overall mood is one of serious professionalism, clinical precision, and focused intensity under bright, sterile lighting.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716967,
+  "id": "20260930052244936ceba98f504050",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052244936ceba98f504050",
+  "usage": {
+    "completion_tokens": 174,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3034
+  }
+}

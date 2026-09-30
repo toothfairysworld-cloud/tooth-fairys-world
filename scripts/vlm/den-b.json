@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image shows a dental examination room with an orange and white dentist's chair, medical equipment, and cabinetry.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710245,
+  "id": "202609300330440ada0ef9b2724a86",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300330440ada0ef9b2724a86",
+  "usage": {
+    "completion_tokens": 24,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 139
+  }
+}

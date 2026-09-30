@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, there are people in the image: a female teacher (main subject) and multiple students of various genders (main subjects).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716931,
+  "id": "202609300522099861153935f44507",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300522099861153935f44507",
+  "usage": {
+    "completion_tokens": 27,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1276,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1303
+  }
+}

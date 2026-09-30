@@ -1,0 +1,221 @@
+// Dental-student portfolio — content schema.
+// Bilingual columns follow the `*_ar` / `*_en` convention; structured
+// values (stats lists, article blocks, case stories) are stored as JSON
+// strings and hydrated by src/lib/data.ts into the typed shapes the
+// public site consumes. SQLite mirrors the future Supabase/Postgres model.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  displayName  String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Profile {
+  id               String   @id @default("main")
+  nameAr           String
+  nameEn           String
+  initials         String   @default("TF")
+  roleAr           String
+  roleEn           String
+  universityAr     String
+  universityEn     String
+  valueStatementAr String
+  valueStatementEn String
+  portraitSrc      String   @default("/images/hero-portrait.webp")
+  portraitAltAr    String
+  portraitAltEn    String
+  bioAr            String   @default("[]") // JSON: string[]
+  bioEn            String   @default("[]")
+  philosophyAr     String
+  philosophyEn     String
+  interestsAr      String   @default("[]") // JSON: string[]
+  interestsEn      String   @default("[]")
+  instagram        String?
+  cvPdf            String?
+  graduationDate   String   @default("2027-06-30T18:30:00+03:00")
+  isSample         Boolean  @default(true)
+  aboutImage1      String   @default("/images/about-1.webp")
+  aboutImage2      String   @default("/images/about-2.webp")
+  aboutImage3      String   @default("/images/about-3.webp")
+  updatedAt        DateTime @updatedAt
+}
+
+model SectionConfig {
+  id          String  @id // SectionId enum value
+  sortOrder   Int     @default(0)
+  enabled     Boolean @default(true)
+  titleAr     String  @default("")
+  titleEn     String  @default("")
+  subtitleAr  String  @default("")
+  subtitleEn  String  @default("")
+  image       String  @default("")
+}
+
+model TimelineEntry {
+  id            String  @id @default(cuid())
+  sortOrder     Int     @default(0)
+  year          String
+  titleAr       String
+  titleEn       String
+  descriptionAr String
+  descriptionEn String
+  skillsAr      String  @default("[]") // JSON: string[]
+  skillsEn      String  @default("[]")
+  stats         String  @default("[]") // JSON: CaseStatRow[]
+  published     Boolean @default(true)
+}
+
+model CaseStudy {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  sortOrder      Int      @default(0)
+  category       String   @default("fillings") // fillings|endo|gum|prosth
+  titleAr        String
+  titleEn        String
+  summaryAr      String
+  summaryEn      String
+  period         String
+  featured       Boolean  @default(false)
+  imageBefore    String   @default("")
+  imageAfter     String   @default("")
+  imageAltAr     String   @default("")
+  imageAltEn     String   @default("")
+  story          String   @default("{}") // JSON: bilingual story fields
+  published      Boolean  @default(false)
+  patientConsent Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Certificate {
+  id         String  @id @default(cuid())
+  sortOrder  Int     @default(0)
+  titleAr    String
+  titleEn    String
+  issuerAr   String
+  issuerEn   String
+  date       String
+  pdf        String?
+  published  Boolean @default(true)
+}
+
+model ResearchItem {
+  id          String  @id @default(cuid())
+  sortOrder   Int     @default(0)
+  titleAr     String
+  titleEn     String
+  abstractAr  String
+  abstractEn  String
+  link        String?
+  year        String
+  published   Boolean @default(true)
+}
+
+model VolunteeringItem {
+  id            String  @id @default(cuid())
+  sortOrder     Int     @default(0)
+  titleAr       String
+  titleEn       String
+  descriptionAr String
+  descriptionEn String
+  imageSrc      String  @default("")
+  imageAltAr    String  @default("")
+  imageAltEn    String  @default("")
+  impact        String  @default("[]") // JSON: CaseStatRow[]
+  published     Boolean @default(true)
+}
+
+model BlogPost {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  sortOrder      Int      @default(0)
+  titleAr        String
+  titleEn        String
+  excerptAr      String
+  excerptEn      String
+  category       String   @default("")
+  date           String
+  readingMinutes Int      @default(3)
+  coverSrc       String   @default("")
+  coverAltAr     String   @default("")
+  coverAltEn     String   @default("")
+  bodyAr         String   @default("[]") // JSON: ArticleBlock[]
+  bodyEn         String   @default("[]")
+  published      Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model FaqItem {
+  id        String  @id @default(cuid())
+  sortOrder Int     @default(0)
+  qAr       String
+  qEn       String
+  aAr       String
+  aEn       String
+  published Boolean @default(true)
+}
+
+model ResourceItem {
+  id            String  @id @default(cuid())
+  sortOrder     Int     @default(0)
+  titleAr       String
+  titleEn       String
+  descriptionAr String
+  descriptionEn String
+  file          String
+  downloads     Int     @default(0)
+  kind          String  @default("notes") // notes|checklist|plan|glossary
+  published     Boolean @default(true)
+}
+
+model Testimonial {
+  id        String  @id @default(cuid())
+  sortOrder Int     @default(0)
+  quoteAr   String
+  quoteEn   String
+  name      String
+  roleAr    String
+  roleEn    String
+  initials  String
+  published Boolean @default(true)
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  locale    String   @default("ar")
+  read      Boolean  @default(false)
+  archived  Boolean  @default(false)
+  ipHash    String?
+  createdAt DateTime @default(now())
+}
+
+/// Privacy-friendly aggregate page views — one row per (day, path, locale),
+/// no cookies, no IPs, no visitor identifiers (see /privacy).
+model PageView {
+  id        String   @id @default(cuid())
+  day       String // YYYY-MM-DD (UTC)
+  path      String
+  locale    String   @default("ar")
+  views     Int      @default(1)
+  updatedAt DateTime @updatedAt
+
+  @@unique([day, path, locale])
+  @@index([day])
+}

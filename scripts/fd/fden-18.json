@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image contains no person; it depicts a modern, brightly lit dental clinic interior. The setting features a white and teal dental chair with attached equipment, a sink in the foreground, white cabinetry with wooden accents, and a desk with a blue stool. The image is oriented in landscape format with a high-resolution, crisp feel. The overall mood is sterile, clean, and professional, characterized by a minimalist aesthetic and ample natural light filtering through blinds.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717027,
+  "id": "20260930052345b18d0800d0db4ae3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052345b18d0800d0db4ae3",
+  "usage": {
+    "completion_tokens": 91,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2951
+  }
+}

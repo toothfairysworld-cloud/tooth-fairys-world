@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Transcription:**\nسارة الراشد\n\n**Analysis of the Script:**\nYes, the Arabic letters are **properly connected**. This is real, correctly rendered Arabic script (not isolated or garbled). \n\nSpecifically:\n*   **سارة (Sarah):** The س (Seen), ا (Alif), ر (Reh), and ة (Ta Marbuta) are all in their correct contextual forms and connected properly.\n*   **الراشد (Al-Rashid):** The ال (Al-) is correctly ligatured, and the ر (Reh), ا (Alif), ش (Sheen), and د (Dal) follow standard Arabic orthographic rules.\n\nThere is **no broken text**. The font is a clean, modern typeface (likely a geometric or neo-grotesque sans-serif style) that handles Arabic joining correctly.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790722568,
+  "id": "20260930065605f6981849a2fa4273",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930065605f6981849a2fa4273",
+  "usage": {
+    "completion_tokens": 185,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1099,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1284
+  }
+}

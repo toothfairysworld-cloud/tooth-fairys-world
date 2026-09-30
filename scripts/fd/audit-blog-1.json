@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "No, there are no people in this image.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716937,
+  "id": "20260930052216865e60b4eda04fca",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052216865e60b4eda04fca",
+  "usage": {
+    "completion_tokens": 11,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 919
+  }
+}

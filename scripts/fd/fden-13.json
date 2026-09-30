@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "This is a portrait of a woman appearing to be in her late 20s to 30s, with long, dark, wavy hair and a gentle, knowing smile as she looks slightly off-camera. She is dressed in a blue and white gingham checkered button-down shirt featuring a black bow tie at the collar, complemented by a long, thin dangling earring. The setting is minimalist, consisting of a solid dark gray or charcoal background that creates a studio-like atmosphere. The image is oriented in a square format with a high-resolution feel, characterized by sharp focus on the subject's face and soft, professional lighting. The overall mood is approachable, confident, and subtly playful, blending a sense of professional poise with a warm, friendly personality.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716999,
+  "id": "20260930052315c89d629302e54347",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052315c89d629302e54347",
+  "usage": {
+    "completion_tokens": 155,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3015
+  }
+}

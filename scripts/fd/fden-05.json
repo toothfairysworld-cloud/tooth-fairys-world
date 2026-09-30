@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a male barber, appearing to be in his 30s or 40s, with voluminous curly reddish-brown hair and a full beard. He is dressed in a dark button-down shirt under a dark vest and wears a grey bowler hat. He is captured mid-activity, leaning forward with intense focus as he uses scissors and a purple comb to cut a client's hair. The setting is a professional barbershop, evidenced by the shelves of hair products and tools in the background. The image is oriented in a landscape format with a high-resolution feel that emphasizes sharp details and textures. The overall mood is one of professional concentration and artisanal craftsmanship, highlighted by the dramatic, moody lighting.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716971,
+  "id": "20260930052247b81d3f7f863a4878",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052247b81d3f7f863a4878",
+  "usage": {
+    "completion_tokens": 147,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3007
+  }
+}

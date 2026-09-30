@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a group of seven medical professionals, appearing to be a mix of men and women in their late 20s to 40s, dressed in teal surgical scrubs, light blue bouffant caps, and light blue surgical face masks. They are gathered in a tight circle, leaning inward and looking down at the camera in a collaborative \"team huddle\" pose. The setting is clearly an operating room, dominated by a large, circular surgical light fixture with multiple bulbs positioned directly above them. The image is square in orientation with a high-resolution feel and a slightly warm, vintage color grade. The overall mood is one of camaraderie, professionalism, and focused teamwork.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716978,
+  "id": "202609300522546e7c9e9821f746db",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300522546e7c9e9821f746db",
+  "usage": {
+    "completion_tokens": 139,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4140,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4279
+  }
+}

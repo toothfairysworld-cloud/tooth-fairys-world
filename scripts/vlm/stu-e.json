@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A group of people are gathered around a laptop in a library, collaborating or studying together.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710073,
+  "id": "2026093003275250cce23754344ed4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093003275250cce23754344ed4",
+  "usage": {
+    "completion_tokens": 19,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 134
+  }
+}

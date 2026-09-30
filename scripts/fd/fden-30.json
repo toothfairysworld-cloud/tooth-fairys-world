@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "An older woman with short gray hair, wearing glasses, a cream-colored top, and an ornate silver necklace with dangling earrings, sits calmly as she receives an injection in her upper arm from a female healthcare professional dressed in a white lab coat over a teal shirt. The medical provider, who has short brown hair and wears an ID badge reading \"HMC,\" holds the syringe with one hand while gently steadying the patient's arm with the other. They are positioned against a plain light-gray background that suggests a clinical setting, with both women facing each other at close range—the patient looking toward the caregiver with a relaxed, slightly smiling expression while the nurse focuses attentively on the procedure with a warm, reassuring demeanor.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717087,
+  "id": "2026093005244344eb08f084df46da",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005244344eb08f084df46da",
+  "usage": {
+    "completion_tokens": 145,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2842,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2987
+  }
+}

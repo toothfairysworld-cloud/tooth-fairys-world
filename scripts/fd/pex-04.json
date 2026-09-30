@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the image provided, here is the evaluation:\n\n*   **Is the MAIN person a woman?** No. There is no human being in this image.\n*   **Is she a dentist/medical professional?** N/A. The main subject is a white bird (an egret or heron).\n*   **Attire:** The subject is a wild bird with white plumage.\n*   **Setting:** An outdoor residential area featuring a house with a red-tiled roof, a grassy lawn, and a small pond or water hazard (likely on a golf course).\n*   **Activity:** The bird is standing still on the grass near the water's edge.\n*   **Smile visible / No mask:** N/A. It is a bird.\n*   **Orientation:** Landscape (horizontal).\n*   **Quality:** The image appears to be a casual snapshot; it is somewhat grainy and lacks professional lighting or composition.\n\n**Rating: 0/10**\n\nThis image is completely unsuitable as a cinematic feminine dental website hero because it contains no people, no medical context, and no professional aesthetic.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717561,
+  "id": "202609300532336bdeda66fec3449f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300532336bdeda66fec3449f",
+  "usage": {
+    "completion_tokens": 226,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5882,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6108
+  }
+}

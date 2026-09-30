@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a woman appearing to be in her 30s or 40s with short, dark brown hair featuring lighter highlights, wearing a white lab coat over a dark purple top with a bow at the neckline. She is standing outdoors in a natural setting with green foliage and a large tree trunk visible to her right, positioned in a three-quarter pose facing the camera with a warm, friendly smile. The photograph is oriented in landscape format with a high-resolution feel that captures sharp details on the subject while maintaining a softly blurred background (bokeh effect). The overall mood is professional yet approachable and serene, enhanced by bright natural daylight filtering through the trees, creating an atmosphere of confidence and warmth in what appears to be a park or garden environment.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716983,
+  "id": "20260930052259e369299edce34f6b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052259e369299edce34f6b",
+  "usage": {
+    "completion_tokens": 151,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3011
+  }
+}

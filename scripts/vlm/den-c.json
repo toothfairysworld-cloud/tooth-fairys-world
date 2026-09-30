@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A modern, clean dental office with white cabinetry, a dental chair, and medical equipment.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710252,
+  "id": "20260930033051b1803b4bd6fa4a72",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930033051b1803b4bd6fa4a72",
+  "usage": {
+    "completion_tokens": 20,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 135
+  }
+}

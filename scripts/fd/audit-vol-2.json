@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, there are seven people in the image: six females and one male, all appearing to be dentists or medical staff (other), and they are all main subjects.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716934,
+  "id": "202609300522111c5f31f45323492f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300522111c5f31f45323492f",
+  "usage": {
+    "completion_tokens": 36,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1980,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2016
+  }
+}

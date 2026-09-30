@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A dentist points to a dental X-ray displayed on a screen while a female patient sits in the dental chair.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710070,
+  "id": "20260930032749d8e065044c1d4306",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930032749d8e065044c1d4306",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 138
+  }
+}

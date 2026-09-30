@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a female subject, appearing to be in her late 20s to 30s, dressed in professional medical attire consisting of a white lab coat over a light blue scrub top, a blue disposable surgical cap, and a light blue surgical mask covering her nose and mouth. A stethoscope is draped around her neck. She is captured in a medium close-up portrait orientation, standing still and looking directly at the camera with a focused and steady gaze. The setting appears to be a clinical or hospital environment, indicated by the neutral, paneled wall in the background. The image has a high-resolution feel with sharp focus on the subject's eyes and the texture of the medical fabrics. The overall mood is professional, serious, and conveys a sense of clinical readiness and calm competence.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717015,
+  "id": "2026093005233061099b20682e499f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005233061099b20682e499f",
+  "usage": {
+    "completion_tokens": 160,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3020
+  }
+}

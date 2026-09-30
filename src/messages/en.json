@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "siteName": "Tooth Fairy's World",
+    "title": "Tooth Fairy's World | Dental Student — Academic Portfolio",
+    "description": "Academic and professional portfolio of a fifth-year dental student: documented clinical experience, case studies, certificates and research, plus patient-friendly articles on oral health. An academic portfolio — not a clinic.",
+    "ogTitle": "Tooth Fairy's World — Dental Student",
+    "ogDescription": "Clinical experience, case studies, research and patient-friendly articles. An academic portfolio — not a clinic."
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "toggleTheme": "Toggle light and dark mode",
+    "switchLang": "Switch to Arabic",
+    "openMenu": "Open main menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "toothDecor": "Animated tooth illustration",
+    "beforeAfterSlider": "Before and after comparison slider",
+    "sliderHint": "Drag or use arrow keys to compare"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "cases": "Cases",
+    "certificates": "Certificates",
+    "research": "Research",
+    "volunteering": "Volunteering",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "resources": "Resources",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "more": "More",
+    "cta": "Get in touch",
+    "ariaLabel": "Main navigation"
+  },
+  "sample": {
+    "title": "Sample content",
+    "text": "Everything you see here is placeholder content for demonstration — it will be replaced with real content from the dashboard.",
+    "dismiss": "Dismiss",
+    "badge": "SAMPLE"
+  },
+  "hero": {
+    "eyebrow": "Fifth-year dental student",
+    "countdownLabel": "Graduating in",
+    "days": "days",
+    "hours": "hrs",
+    "minutes": "min",
+    "graduatedTitle": "Graduated!",
+    "graduatedText": "Class of {year} — congratulations",
+    "cv": "Download CV",
+    "contact": "Contact me",
+    "portraitAlt": "Portrait photo of a dental student",
+    "scrollCue": "Scroll to explore"
+  },
+  "common": {
+    "viewAll": "View all",
+    "readMore": "Read article",
+    "readCase": "View case study",
+    "backHome": "Back to home",
+    "backToCases": "All case studies",
+    "backToBlog": "All articles",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied",
+    "download": "Download",
+    "downloads": "downloads",
+    "pdf": "PDF file",
+    "minutes": "min read",
+    "viewCertificate": "Certificate",
+    "externalLink": "External link"
+  },
+  "contact": {
+    "subtitle": "A question, a training opportunity, or an awareness campaign invite? Write to me and I'll reply within two days.",
+    "form": {
+      "title": "Send a message",
+      "name": "Full name",
+      "namePlaceholder": "e.g. Emily Watson",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "message": "Your message",
+      "messagePlaceholder": "Write your message here…",
+      "send": "Send message",
+      "sending": "Sending…",
+      "sentTitle": "Message received!",
+      "sentText": "Thank you {name} — I'll reply to your email within two days.",
+      "another": "Send another message"
+    },
+    "errors": {
+      "nameRequired": "Please tell me your name first.",
+      "nameShort": "That name looks too short — please write your full name.",
+      "emailRequired": "I need your email to reply to you.",
+      "emailInvalid": "That email doesn't look right — double-check it (like name@example.com).",
+      "messageRequired": "Write your message — even one line is enough.",
+      "messageShort": "That message is a little too short — add some detail.",
+      "rateLimited": "You've sent several messages in the last hour. Please wait a bit and try again later.",
+      "generic": "Something went wrong. Please try again — if it keeps happening, try again later."
+    },
+    "channels": "Or reach out directly on",
+    "instagram": "Instagram",
+    "note": "The contact form currently runs in demo mode — it will be wired to a real inbox in Phase 2."
+  },
+  "ask": {
+    "questionTitle": "Have a question about your oral health?",
+    "questionPlaceholder": "Type your question here…",
+    "submit": "Send question",
+    "sending": "Sending…",
+    "sentTitle": "Question received!",
+    "sentText": "I answer the most frequent questions in upcoming articles."
+  },
+  "cases": {
+    "filterLabel": "Filter by category",
+    "all": "All",
+    "before": "Before",
+    "after": "After",
+    "story": {
+      "complaint": "Patient complaint",
+      "diagnosis": "Diagnosis",
+      "plan": "Treatment plan",
+      "materials": "Materials used",
+      "learned": "What I learned"
+    },
+    "disclaimer": "Photos are sample images from freely-licensed sources — real cases are published only with the patient's written consent.",
+    "empty": "No cases in this category yet.",
+    "emptyHint": "Try another category or check back later."
+  },
+  "blog": {
+    "readingTime": "{minutes} min read",
+    "published": "Published",
+    "related": "Related articles",
+    "categories": "Categories",
+    "allPosts": "All articles",
+    "empty": "No articles here yet.",
+    "next": "Next article",
+    "previous": "Previous article"
+  },
+  "footer": {
+    "disclaimer": "An academic portfolio — not a clinic.",
+    "disclaimerFull": "This website is a dental student's academic portfolio, not a clinic: no appointments, no prices, no treatment offers.",
+    "navigation": "Links",
+    "legal": "Legal",
+    "credits": "Credits",
+    "privacy": "Privacy",
+    "rights": "© {year} Tooth Fairy's World — All rights reserved.",
+    "builtNote": "Carefully designed & built — Next.js and Tailwind CSS",
+    "role": "Fifth-year dental student",
+    "backToTop": "Back to top"
+  },
+  "credits": {
+    "title": "Credits",
+    "subtitle": "Every photo on this site comes from freely-licensed sources (Unsplash / Pexels) — here is the full list.",
+    "asset": "Asset",
+    "usage": "Used for",
+    "source": "Source",
+    "license": "License",
+    "photos": "Photography",
+    "illustrations": "Illustrations",
+    "icons": "Icons",
+    "iconsNote": "Lucide icons — ISC license."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The link you followed seems broken, or the page has moved.",
+    "back": "Back to home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "text": "This page didn't load properly. Try refreshing — if it keeps happening, check back later.",
+    "retry": "Try again"
+  },
+  "loading": {
+    "generic": "Loading…"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: September 2026",
+    "intro": "Your privacy matters. This page explains — in plain language — what this portfolio collects and what it doesn't.",
+    "s1Title": "What we collect (and don't)",
+    "s1Body": "This portfolio records aggregate page-view counts only — day, path, and language — with no identifiers, no cookies, and no third-party tools. When you send a message through the contact form, your details (name, email and message) are stored only to reply to you, and are never shared with third parties.",
+    "s2Title": "Cookies",
+    "s2Body": "The site only uses your browser's local storage to remember preferences (language, theme, and hiding the sample-content banner). The page-view counting described above runs without cookies and never follows an individual visitor — it works like a fully anonymized visit log.",
+    "s3Title": "Patient photos & consent",
+    "s3Body": "No clinical case is published without the patient's written consent and removal of any identifying features. Current photos are samples from freely-licensed sources (see the Credits page).",
+    "s4Title": "Your rights",
+    "s4Body": "You can ask for your message or data to be deleted at any time through the contact form or direct email, and I'll respond within a reasonable timeframe.",
+    "s5Title": "Contact",
+    "s5Body": "For any question about this policy, reach me via the contact page."
+  }
+}

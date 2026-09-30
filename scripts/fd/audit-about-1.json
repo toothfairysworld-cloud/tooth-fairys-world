@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, there are people: a male (main subject, role: other), another male (main subject, role: other), a third male (main subject, role: other), and a female (not main subject, role: other).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716927,
+  "id": "20260930052205d9cdbc7817fd4e28",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052205d9cdbc7817fd4e28",
+  "usage": {
+    "completion_tokens": 50,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1708,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1758
+  }
+}

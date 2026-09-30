@@ -1,0 +1,554 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ---------------------------------------------------------------------------
+   Design tokens — "Rosé Editorial" refresh.
+   Light: ivory blush + deep rosewood + champagne gold (feminine, still clinical).
+   Dark: plum-black + soft rose (not inverted).
+   Contrast: primary/foreground ≥ 5.9:1, muted ≥ 7:1 — WCAG AA.
+   --------------------------------------------------------------------------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jakarta), var(--font-readex), ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+  --font-heading: var(--font-display);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Site-specific tokens */
+  --color-primary-strong: var(--primary-strong);
+  --color-surface-2: var(--surface-2);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-warm-strong: var(--accent-warm-strong);
+  --color-accent-warm-foreground: var(--accent-warm-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-pill: 9999px;
+
+  /* Type scale — 360px → 1280px, Latin line-heights (Arabic override below) */
+  --text-display: clamp(2.75rem, 1.45rem + 5.5vw, 5.25rem);
+  --text-display--line-height: 1.06;
+  --text-display--font-weight: 600;
+  --text-h2: clamp(1.625rem, 1.375rem + 1.1vw, 2.25rem);
+  --text-h2--line-height: 1.2;
+  --text-h2--font-weight: 600;
+  --text-h3: clamp(1.125rem, 1.0625rem + 0.3vw, 1.375rem);
+  --text-h3--line-height: 1.4;
+  --text-h3--font-weight: 600;
+  --text-body: clamp(0.9375rem, 0.9219rem + 0.16vw, 1.0625rem);
+  --text-body--line-height: 1.65;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.6;
+  --text-caption--font-weight: 500;
+}
+
+:root {
+  --radius: 0.875rem; /* 14px base: inputs 10, buttons pill, cards 18, media 28 */
+
+  /* Feminine editorial — ivory blush surfaces, rosewood primary */
+  --font-display: var(--font-fraunces), "Georgia", serif;
+  --background: #faf6f3;
+  --foreground: #271e22;
+  --card: #ffffff;
+  --card-foreground: #271e22;
+  --popover: #ffffff;
+  --popover-foreground: #271e22;
+  --primary: #9c4a5c;
+  --primary-foreground: #ffffff;
+  --primary-strong: #7e3648;
+  --secondary: #f5e8e6;
+  --secondary-foreground: #271e22;
+  --muted: #f5e8e6;
+  --muted-foreground: #5d4a50;
+  --accent: #f5e8e6;
+  --accent-foreground: #271e22;
+  --accent-warm: #9e6b25;
+  --accent-warm-strong: #7c531a;
+  --accent-warm-foreground: #ffffff;
+
+  /* Rose → champagne gradient (large text / borders only — both stops ≥ 4.4:1 on ivory) */
+  --grad-rose: linear-gradient(115deg, #7e3648 0%, #9e6b25 100%);
+  --grad-line: linear-gradient(
+    135deg,
+    rgb(156 74 92 / 0.45),
+    rgb(158 107 37 / 0.32)
+  );
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+  --success: #15803d;
+  --success-foreground: #ffffff;
+  --warning: #9e6b25;
+  --surface-2: #f5e8e6;
+  --border: #ead9d6;
+  --input: #ead9d6;
+  --ring: #9c4a5c;
+
+  --chart-1: #9c4a5c;
+  --chart-2: #c98b97;
+  --chart-3: #9e6b25;
+  --chart-4: #d9b98a;
+  --chart-5: #5d4a50;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #271e22;
+  --sidebar-primary: #9c4a5c;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5e8e6;
+  --sidebar-accent-foreground: #271e22;
+  --sidebar-border: #ead9d6;
+  --sidebar-ring: #9c4a5c;
+}
+
+.dark {
+  --font-display: var(--font-fraunces), "Georgia", serif;
+  --background: #191114;
+  --foreground: #f2e8ea;
+  --card: #22181c;
+  --card-foreground: #f2e8ea;
+  --popover: #22181c;
+  --popover-foreground: #f2e8ea;
+  --primary: #e39dab;
+  --primary-foreground: #42222b;
+  --primary-strong: #f2bcc5;
+  --secondary: #2a1d22;
+  --secondary-foreground: #f2e8ea;
+  --muted: #2a1d22;
+  --muted-foreground: #b5a0a8;
+  --accent: #2a1d22;
+  --accent-foreground: #f2e8ea;
+  --accent-warm: #e7c08a;
+  --accent-warm-strong: #b18a4a;
+  --accent-warm-foreground: #3b2a10;
+
+  --grad-rose: linear-gradient(115deg, #e39dab 0%, #e7c08a 100%);
+  --grad-line: linear-gradient(
+    135deg,
+    rgb(227 157 171 / 0.35),
+    rgb(231 192 138 / 0.28)
+  );
+  --destructive: #f87171;
+  --destructive-foreground: #2a0a0a;
+  --success: #4ade80;
+  --success-foreground: #052e14;
+  --warning: #e7c08a;
+  --surface-2: #2a1d22;
+  --border: #3b2a31;
+  --input: #3b2a31;
+  --ring: #e39dab;
+
+  --chart-1: #e39dab;
+  --chart-2: #f2bcc5;
+  --chart-3: #e7c08a;
+  --chart-4: #d9b98a;
+  --chart-5: #b5a0a8;
+
+  --sidebar: #22181c;
+  --sidebar-foreground: #f2e8ea;
+  --sidebar-primary: #e39dab;
+  --sidebar-primary-foreground: #42222b;
+  --sidebar-accent: #2a1d22;
+  --sidebar-accent-foreground: #f2e8ea;
+  --sidebar-border: #3b2a31;
+  --sidebar-ring: #e39dab;
+}
+
+/* Arabic typography: Amiri display, looser line-heights, no negative tracking */
+html[lang="ar"] {
+  --font-display: var(--font-amiri), "Times New Roman", serif;
+  --text-display--line-height: 1.28;
+  --text-display--font-weight: 700;
+  --text-h2--line-height: 1.4;
+  --text-h2--font-weight: 700;
+  --text-h3--line-height: 1.6;
+  --text-h3--font-weight: 700;
+  --text-body--line-height: 1.85;
+}
+html[lang="en"] :is(h1, h2, h3, .text-display, .text-h2, .text-h3) {
+  letter-spacing: -0.015em;
+}
+
+/* Display font applies to all headings site-wide (serif editorial) */
+@layer base {
+  :is(h1, h2, h3, .text-display, .text-h2, .text-h3) {
+    font-family: var(--font-display);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-block-start: 5rem; /* offset for sticky header on anchors */
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 28%, transparent);
+  }
+  :is(a, button, [role="slider"], input, textarea, select, [tabindex]):focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/* --- Custom utilities ----------------------------------------------------- */
+
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 70rem; /* 1120px */
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility section-pad {
+  padding-block: 4rem; /* 64px mobile */
+  @media (min-width: 768px) {
+    padding-block: 6rem; /* 96px */
+  }
+  @media (min-width: 1024px) {
+    padding-block: 7rem; /* 112px */
+  }
+}
+
+/* Signature shape: dental-arch mask for portraits (mirrors in RTL) */
+@utility arch-mask {
+  border-start-start-radius: 9999px;
+  border-start-end-radius: 9999px;
+  overflow: hidden;
+}
+
+/* Feminine soft shadow — rose-tinted, never grey */
+@utility shadow-soft {
+  box-shadow:
+    0 1px 2px rgb(90 45 55 / 0.06),
+    0 12px 32px -12px rgb(90 45 55 / 0.16);
+}
+
+/* Hover glow — rose-tinted lift for cards */
+@utility shadow-glow {
+  box-shadow:
+    0 1px 2px rgb(90 45 55 / 0.06),
+    0 18px 44px -16px rgb(156 74 92 / 0.28);
+}
+
+/* Rose → champagne gradient text (serif numerals, large bold text) */
+@utility text-gradient-rose {
+  background-image: var(--grad-rose);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hairline gradient border — fills with card color, paints gradient on the edge */
+@utility gradient-border {
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--card), var(--card)), var(--grad-line);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Soft aurora mesh — blush / champagne glows over the background color.
+   Keeps text/background contrast (tints are 6–10% only). */
+@utility aurora-blush {
+  background:
+    radial-gradient(
+      40rem 22rem at 12% 6%,
+      color-mix(in srgb, var(--primary) 8%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      46rem 24rem at 88% 14%,
+      color-mix(in srgb, var(--accent-warm) 10%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      36rem 20rem at 50% 96%,
+      color-mix(in srgb, var(--primary) 7%, transparent),
+      transparent 66%
+    ),
+    var(--background);
+}
+
+/* Film grain — layered over imagery for an editorial finish */
+@utility noise-grain {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.08;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+}
+
+/* Hide scrollbars for horizontal filter bars */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Frosted glass card (dark hero context) */
+@utility glass-dark {
+  background: color-mix(in srgb, #14090c 34%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgb(255 255 255 / 0.16);
+}
+
+/* Frosted glass pill (light context) */
+@utility glass-light {
+  background: color-mix(in srgb, var(--background) 78%, transparent);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Cinematic hero: full-bleed image with black → transparent gradient scrim.
+   Bottom scrim carries the text; top scrim keeps the navbar legible. */
+@utility hero-scrim {
+  background:
+    linear-gradient(to top, rgb(10 6 8 / 0.92) 0%, rgb(10 6 8 / 0.55) 34%, rgb(10 6 8 / 0.14) 62%, rgb(10 6 8 / 0) 100%),
+    linear-gradient(to bottom, rgb(10 6 8 / 0.5) 0%, rgb(10 6 8 / 0) 22%);
+}
+
+/* --- Cursor-tracking spotlight (trend: spotlight-follow cards) ------------
+   .spotlight is a plain class paired with the <Spotlight> client wrapper,
+   which sets --sx / --sy on mousemove. Fine pointers only; pure CSS glow. */
+@media (hover: hover) and (pointer: fine) {
+  .spotlight {
+    position: relative;
+    isolation: isolate;
+  }
+  .spotlight::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(
+      22rem circle at var(--sx, 50%) var(--sy, 50%),
+      color-mix(in srgb, var(--primary) 9%, transparent),
+      transparent 70%
+    );
+  }
+  .spotlight:hover::after {
+    opacity: 1;
+  }
+}
+
+/* --- Shine sweep — primary buttons (trend: sheen micro-interaction) ------- */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  bottom: -40%;
+  width: 34%;
+  left: -70%;
+  transform: skewX(-18deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.26),
+    transparent
+  );
+  transition: left 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
+}
+.btn-shine:hover::before {
+  left: 130%;
+}
+
+@utility scrollbar-slim {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  &::-webkit-scrollbar {
+    height: 0.375rem;
+    width: 0.375rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 9999px;
+  }
+}
+
+/* Edge fades for horizontal scrollers — logical, mirror in RTL */
+@utility fade-start {
+  background: linear-gradient(to right, var(--background), transparent);
+}
+[dir="rtl"] .fade-start {
+  background: linear-gradient(to left, var(--background), transparent);
+}
+@utility fade-end {
+  background: linear-gradient(to left, var(--background), transparent);
+}
+[dir="rtl"] .fade-end {
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+/* --- Testimonials marquee (gentle, pauses on hover/focus) ---------------- */
+@keyframes marquee-forward {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-forward-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+.animate-marquee {
+  animation: marquee-forward 45s linear infinite;
+}
+.animate-marquee-slow {
+  animation: marquee-forward 60s linear infinite;
+}
+[dir="rtl"] .animate-marquee {
+  animation-name: marquee-forward-rtl;
+}
+[dir="rtl"] .animate-marquee-slow {
+  animation-name: marquee-forward-rtl;
+}
+.marquee-paused:hover .animate-marquee,
+.marquee-paused:focus-within .animate-marquee {
+  animation-play-state: paused;
+}
+/* Reduced motion: no marquee at all, hide the duplicated track */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-slow {
+    animation: none;
+  }
+  .marquee-clone {
+    display: none;
+  }
+}
+
+/* --- Article prose (blog) ------------------------------------------------- */
+.prose-article {
+  max-width: 68ch;
+}
+.prose-article p {
+  margin-block: 1rem;
+  line-height: 1.85;
+}
+html[lang="en"] .prose-article p {
+  line-height: 1.75;
+}
+.prose-article h2 {
+  margin-block: 2rem 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.prose-article h3 {
+  margin-block: 1.5rem 0.5rem;
+  font-weight: 600;
+}
+.prose-article ul,
+.prose-article ol {
+  margin-block: 1rem;
+  padding-inline-start: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  line-height: 1.85;
+}
+.prose-article ul {
+  list-style: disc;
+}
+.prose-article ol {
+  list-style: decimal;
+}
+.prose-article strong {
+  font-weight: 700;
+  color: var(--primary-strong);
+}
+.dark .prose-article strong {
+  color: var(--primary-strong);
+}
+.prose-article a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-article blockquote {
+  margin-block: 1.5rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid var(--accent-warm);
+  color: var(--muted-foreground);
+  font-style: normal;
+}
+
+/* --- Reduced motion: kill CSS animation loops (JS anims use the hook) ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

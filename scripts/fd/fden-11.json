@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "This is a portrait orientation image of a male subject appearing to be in his late 20s to mid-30s. He is dressed in formal attire, consisting of a crisp white suit jacket over a white collared shirt, with a colorful patterned pocket square visible in the breast pocket and a small pin on the lapel. The man is captured from the chest up in a pensive pose, resting his chin on his right hand while looking directly at the camera with a neutral expression. The setting is a studio environment characterized by a solid, vibrant magenta or deep pink background that provides a high-contrast backdrop. The image has a high-resolution feel with sharp focus and professional lighting that highlights the texture of the fabric and the subject's features. The overall mood is polished, modern, and slightly intellectual, blending the formality of the white suit with the bold energy of the background color.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716987,
+  "id": "2026093005230374ffeac60d7e4f6a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005230374ffeac60d7e4f6a",
+  "usage": {
+    "completion_tokens": 181,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3041
+  }
+}

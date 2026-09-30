@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Position:** Center, middle (chest-up portrait).\n2) **Clean Space:** Yes, significant clean space above the head and on both sides for text overlay.\n3) **Orientation/Res:** Landscape, approx. 1920x1280.\n4) **Expression:** Eyes are visible and engaged; **wearing a mask**; neutral expression (smile hidden).\n5) **Rating: 4/10** (Professional but generic; the mask hides the \"smile\" essential for premium dental branding, and the lighting is flat/clinical rather than cinematic).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717467,
+  "id": "20260930053104aee5c78d3b584bf6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930053104aee5c78d3b584bf6",
+  "usage": {
+    "completion_tokens": 119,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2909,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3028
+  }
+}

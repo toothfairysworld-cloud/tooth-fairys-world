@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A woman, likely in her 30s or 40s, with red-painted fingernails is typing on a silver laptop placed on a wooden desk. She is seated and facing the screen, with a blue stethoscope resting beside the computer. The setting appears to be an office or home workspace with neutral-colored walls. Her posture suggests she is focused and engaged in her work, possibly entering medical data or researching health information.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717078,
+  "id": "202609300524345574a08502834fc9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609300524345574a08502834fc9",
+  "usage": {
+    "completion_tokens": 89,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2842,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2931
+  }
+}

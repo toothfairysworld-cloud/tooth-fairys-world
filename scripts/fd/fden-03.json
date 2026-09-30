@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image contains no person; it depicts a modern, well-lit dental examination room featuring a prominent orange dental chair in the center, surrounded by white cabinetry, medical equipment, and a matching orange stool. The setting is a clean, professional clinical space with white walls, dark tiled flooring, and natural light streaming from a window on the right. Captured in a landscape orientation with high resolution and sharp detail, the overall mood is sterile, organized, and calm, emphasizing hygiene and readiness for a medical procedure.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716964,
+  "id": "20260930052240f786b0ed60244eba",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052240f786b0ed60244eba",
+  "usage": {
+    "completion_tokens": 104,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2964
+  }
+}

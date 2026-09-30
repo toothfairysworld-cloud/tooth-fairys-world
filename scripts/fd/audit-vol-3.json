@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, there are three people: a female (left, main subject), a female (center, main subject), and a male (right, main subject); all are in the role of \"other\" (colleagues/friends).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716936,
+  "id": "20260930052215c62b5696ceb942ff",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052215c62b5696ceb942ff",
+  "usage": {
+    "completion_tokens": 49,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1276,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1325
+  }
+}

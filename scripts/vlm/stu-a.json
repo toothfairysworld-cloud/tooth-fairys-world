@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image shows a curved library with rows of bookshelves filled with books.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710328,
+  "id": "20260930033207c9f17f3af60e4c93",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930033207c9f17f3af60e4c93",
+  "usage": {
+    "completion_tokens": 17,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 132
+  }
+}

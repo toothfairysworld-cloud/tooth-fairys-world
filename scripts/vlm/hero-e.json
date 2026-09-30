@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A man with glasses wearing a dark suit jacket and white shirt stands in front of a window.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710293,
+  "id": "2026093003313336abc38972c5421a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093003313336abc38972c5421a",
+  "usage": {
+    "completion_tokens": 20,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 259,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    },
+    "total_tokens": 279
+  }
+}

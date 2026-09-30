@@ -1,0 +1,11 @@
+[
+  {
+    "url": "https://www.cnblogs.com",
+    "name": "Excel判断日期是否是工作日的实现（排除节假日，加上补班日",
+    "snippet": "Dec 5, 2023 — 实现思路：工作日= 【周一到周五（排除节假日） 或者补班日】 公式编写： 1. 周一到周五判断WEEKDAY(A2,2) 获取该日期是星期几（返回：1-7）， ...",
+    "host_name": "www.cnblogs.com",
+    "rank": 0,
+    "date": "Dec 5, 2023",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "This is a portrait-oriented, high-resolution image of a woman appearing to be in her late 20s to mid-30s. She has dark hair pulled up into a messy top-knot bun with loose strands framing her face and is wearing a simple white crew-neck t-shirt. She is posing for the camera with a warm, genuine smile that reveals her teeth, looking directly at the viewer. The setting is a minimalist studio environment with a plain, bright white background. The overall mood is friendly, approachable, and clean, conveying a sense of casual confidence and positivity.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790717010,
+  "id": "2026093005231900404d6ed6d845f1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026093005231900404d6ed6d845f1",
+  "usage": {
+    "completion_tokens": 117,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5164,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5281
+  }
+}

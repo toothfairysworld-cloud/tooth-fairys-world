@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "A teacher stands at the front of a classroom while students sit at their desks, with one student raising his hand.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790710074,
+  "id": "20260930032753f49fba8a085443aa",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930032753f49fba8a085443aa",
+  "usage": {
+    "completion_tokens": 24,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 139
+  }
+}

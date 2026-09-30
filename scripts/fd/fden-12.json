@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The image features a male, appearing to be in his 30s or 40s, dressed in a white medical lab coat over a pink collared shirt with a stethoscope draped around his neck and a green surgical mask covering the lower half of his face. He is wearing black-rimmed glasses and looking directly at the camera in a head-and-shoulders portrait pose. The setting appears to be outdoors in front of a blurred building, likely a medical facility. The image is oriented vertically (portrait) with a high-resolution, sharp focus on the subject against a soft, out-of-focus background. The overall mood is professional, calm, and reassuring, conveying a sense of medical competence and approachability.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790716994,
+  "id": "20260930052308fa231b30c2ac40b2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260930052308fa231b30c2ac40b2",
+  "usage": {
+    "completion_tokens": 145,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6333
+  }
+}
