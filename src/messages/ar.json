@@ -75,7 +75,7 @@
     "form": {
       "title": "أرسل رسالة",
       "name": "الاسم الكامل",
-      "namePlaceholder": "مثال: سارة العتيبي",
+      "namePlaceholder": "مثال: د. فاطمة الأحمد",
       "email": "البريد الإلكتروني",
       "emailPlaceholder": "name@example.com",
       "message": "رسالتك",
